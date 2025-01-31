@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <button onclick="changeToPink();">Make it pink!</button>
+        <button onclick="changeToGreen();">Make it green!</button>
+        <button onclick="changeToBlue();">Make it blue!</button>
+        <button onclick="changeToWhite();">Reset</button>
+        <p id="color">The background is white</p>
+    </div>
+
+    <script>
+        function changeToPink() {
+            document.body.style.backgroundColor = "#f7abe0";
+            document.getElementById("color").innerHTML
+            = "It's pink now!";
+        }
+
+        function changeToGreen() {
+            document.body.style.backgroundColor = "#80f2b6";
+            document.getElementById("color").innerHTML
+            = "It's green now!";
+        }
+
+        function changeToBlue() {
+            document.body.style.backgroundColor ="#89affa";
+            document.getElementById("color").innerHTML
+            = "It's blue now!";
+        }
+        
+        function changeToWhite() {
+            document.body.style.backgroundColor ="white";
+            document.getElementById("color").innerHTML
+            = "The background is white";
+        }
+
+
+
+
+    </script>
+
+
+
+
+
+</body>
+</html>
